@@ -14,7 +14,7 @@ export default class CountComponent extends Component {
                     }}
                     style = {{ fontSize: 18, color: 'white' }}
                     onPress = {() => {
-                        this.props.onDecrement(1);
+                        this.props.onDecrement();
                     }}
                     >Decrease-</Button>
                     <Button containerStyle = {{
@@ -23,10 +23,11 @@ export default class CountComponent extends Component {
                     }}
                     style = {{ fontSize: 18, color: 'white' }}
                     onPress = {() => {
-                        this.props.onIncrement(1);
+                        this.props.onIncrement();
                     }}
                     >Increase+</Button>
                 </View>
+                <Text style = {{fontSize: 18, color: 'darkviolet', textAlign: 'center'}}>{this.props.times}</Text>
             </View>
         );
     }
