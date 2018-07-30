@@ -27,7 +27,7 @@ export default class CountComponent extends Component {
                     }}
                     >Increase+</Button>
                 </View>
-                <Text style = {{fontSize: 18, color: 'darkviolet', textAlign: 'center'}}>{this.props.times}</Text>
+                <Text style = {{fontSize: 18, color: 'darkviolet', textAlign: 'center'}}>Count: {this.props.times}</Text>
             </View>
         );
     }
